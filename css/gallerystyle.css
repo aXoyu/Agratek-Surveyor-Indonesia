@@ -482,7 +482,7 @@ footer .wave#wave4 {
 }
 
 /* 800px version */
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     #header {
         padding: 20px;
     }
@@ -513,7 +513,7 @@ footer .wave#wave4 {
     }
 
     section.gallery {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 8px;
     }
 
@@ -546,7 +546,7 @@ footer .wave#wave4 {
 }
 
 /* 400px version */
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     #header {
         padding: 15px;
         justify-content: space-between;
@@ -610,7 +610,7 @@ footer .wave#wave4 {
     }
 
     section.gallery {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 6px;
     }
 
