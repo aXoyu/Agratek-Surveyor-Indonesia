@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Agratek Surveyor Indonesia</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/aos.css">
+    <link rel="stylesheet" href="/css/line-awesome.min.css">
+    <link rel="stylesheet" href="/css/projectstyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <a href="#" class="logo"><img src="/images/agrateklogo.png" alt="" width="235" height="75"></a>
+        <ul>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="hideOnMobile"><a href="blog.html">Blog</a></li>
+            <li class="hideOnMobile"><a href="project.html">Project</a></li>
+            <li class="hideOnMobile"><a href="#">Layanan
+                    <span class="material-icons dropdown-icon">
+                        arrow_drop_down
+                    </span>
+                </a>
+                <ul class="drop-down">
+                    <a href="/LYS-pemetaan-topography.html">
+                        <li>Survey Pemetaan Topografi</li>
+                    </a>
+                    <a href="LYS-batimetri&hidro.html">
+                        <li>Batimetri & Hidrografi</li>
+                    </a>
+                    <a href="LYS-drone.html">
+                        <li>Drone Mapping</li>
+                    </a>
+                    <a href="LYS-gps.html">
+                        <li>GPS/GNSS</li>
+                    </a>
+                </ul>
+            </li>
+            <li class="hideOnMobile"><a href="gallery.html">Gallery</a></li>
+            <li class="hideOnMobile"><a href="contact.html">Contact Us</a></li>
+            <li class="menu-button" onclick="showSidebar()">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+            </li>
+        </ul>
+
+        <!-- burger -->
+        <ul class="sidebar">
+            <li class="close-btn" onclick="hideSidebar()">x</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li class="dropdown"><a href="#">Layanan
+                    <span class="material-icons dropdown-icon">
+                        arrow_drop_down
+                    </span>
+                </a>
+                <ul class="drop-down">
+                    <a href="LYS-pemetaan-topography.html">
+                        <li>Survey Pemetaan Topografi</li>
+                    </a>
+                    <a href="LYS-batimetri&hidro.html">
+                        <li>Batimetri & Hidrografi</li>
+                    </a>
+                    <a href="LYS-drone.html">
+                        <li>Drone Mapping</li>
+                    </a>
+                    <a href="LYS-gps.html">
+                        <li>GPS/GNSS</li>
+                    </a>
+                </ul>
+            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </header>
+
+    <div class="abouttitle">
+        <header class="title" data-aos="zoom-in-up" data-aos-delay="150">
+            <h1>Project</h1>
+            <p>Beberapa project yang kami pegang selama 2 tahun terakhir</p>
+        </header>
+    </div>
+
+    <div class="scrolling-text-container">
+        <span>Agratek</span>
+        <marquee behavior="" direction="left">Berikut adalah proyek-proyek yang telah kami selesaikan dalam dua tahun
+            terakhir</marquee>
+    </div>
+
+    <div class="slide-container">
+
+        <div class="slides">
+            <img src="/images/projek2.jpg" alt="" class="active">
+            <img src="/images/projek1.jpg" alt="">
+            <img src="/images/projek4.jpg" alt="">
+            <img src="/images/projek5.jpg" alt="">
+            <img src="/images/projek6.jpg" alt="">
+            <img src="/images/projek9.jpg" alt="">
+            <img src="/images/projek8.jpg" alt="">
+            <img src="/images/projek7.jpg" alt="">
+        </div>
+
+        <div class="buttons">
+            <span class="next">&#10095;</span>
+            <span class="prev">&#10094;</span>
+        </div>
+
+        <div class="dotscontainer">
+            <div class="dot active" attr='0' onclick="switchimage(this)"></div>
+            <div class="dot" attr="1" onclick="switchimage(this)"></div>
+            <div class="dot" attr="2" onclick="switchimage(this)"></div>
+            <div class="dot" attr="3" onclick="switchimage(this)"></div>
+            <div class="dot" attr="4" onclick="switchimage(this)"></div>
+            <div class="dot" attr="5" onclick="switchimage(this)"></div>
+            <div class="dot" attr="6" onclick="switchimage(this)"></div>
+            <div class="dot" attr="7" onclick="switchimage(this)"></div>
+        </div>
+    </div>
+
+    <ul class="timeline">
+        <li class="year">
+            <h2>2024</h2>
+            <div class="content">
+                <h3>Sorum Mitsubishi</h3>
+                <ul class="content-list">
+                    <li>Survey Topografi</li>
+                </ul>
+                <p>Loa Janan Ilir, Kab. Kutai Kartanegara - Kaltim</p>
+
+                <hr>
+
+                <h3>PT. Milenia Coalindo Utama</h3>
+                <p>Survey Pemetaan Kolam Dermaga</p>
+                <ul class="content-list">
+                    <li>Bathymetry & Hidrografi</li>
+                    <li>Topografi</li>
+                    <li>Subkon Konsultan PT. Dodingkon Tongon Aloya</li>
+                </ul>
+                <p>Kota Bangun, Kab. Kutai Kartanegara - Kaltim</p>
+
+                <hr>
+
+                <h3>PT. Indotambang Mitra Energi</h3>
+                <p>Survey Pemetaan Area Kolam Jetty</p>
+                <ul class="content-list">
+                    <li>Bathymetry & Hidrografi</li>
+                    <li>Topografi</li>
+                    <li>Pembuatan Dokumen Kajian Teknis Perizinan TUKS/TERSUS</li>
+                </ul>
+                <p>Labanan Makarti, Kab. Berau - Kaltim</p>
+
+                <hr>
+
+                <h3>PT. Sentosa Welindo Kontruksi</h3>
+                <p>Survey Pemetaan Area Kolam Jetty</p>
+                <ul class="content-list">
+                    <li>Bathymetry & Hidrografi</li>
+                    <li>Topografi</li>
+                    <li>Subkon Konsultan PT. Bumi Indonesia</li>
+                </ul>
+                <p>Penajam Paser Utara, - Kaltim</p>
+
+                <hr>
+
+                <h3>PT. Xerves Samudera Bahari</h3>
+                <p>Survey Pemetaan Area Kolam Jetty</p>
+                <ul class="content-list">
+                    <li>Bathymetry & Hidrografi</li>
+                    <li>Topografi</li>
+                    <li>Subkon Konsultan PT. Berkah Tujuh Bersaudara</li>
+                </ul>
+                <p>Desa Mandiodo, Kec. Molawe Kab. Konawe Utara - Sulawesi Utara</p>
+
+                <hr>
+
+                <h3>PT. Pelabuhan Tiga Bersaudara</h3>
+                <p>Survey Pemetaan Area Kolam Jetty</p>
+                <ul class="content-list">
+                    <li>Bathymetry & Hidrografi Area STS</li>
+                    <li>Subkon Konsultan PT. Berkah Tujuh Bersaudara</li>
+                </ul>
+                <p>Muara Jawa, Kab. Kutai Kartanegara - Kaltim</p>
+
+                <hr>
+
+                <h3>Dinas Kehutanan Kaltim</h3>
+                <ul class="content-list">
+                    <li>Survey Topografi Resort</li>
+                </ul>
+                <p>Berau - Kaltim</p>
+
+                <hr>
+
+                <h3>CV. Agratek Surveyor Indonesia</h3>
+                <ul class="content-list">
+                    <li>Survey Topografi Turap</li>
+                </ul>
+                <p>Jl. Dr. Soetomo, Samarinda - Kaltim</p>
+            </div>
+        </li>
+
+        <!--taun next nya -->
+        <li class="year">
+            <h2>2023</h2>
+            <div class="content">
+                <h3>PT. Kawan Selaras Sejahtera</h3>
+                <p>Survey Kedalaman Alur Sungai Mahakam</p>
+                <p>Sungai Mahakam, Kab. Kutai Kartanegara - Kaltim</p>
+
+                <hr>
+
+                <h3>PT. Petrosuns Internasional Terminal</h3>
+                <p>Survey Kedalaman Alur Sungai Berau</p>
+                <p>Sungai Berau, Kab. Berau - Kaltim</p>
+
+                <hr>
+
+                <h3>PT. Kawan Selaras Sejahtera</h3>
+                <p>Survey Kedalaman Alur Sungai Mentaya</p>
+                <p>Sungai Mentaya, Kab. Kotawaringin Timur - Kalteng</p>
+
+                <hr>
+
+                <h3>PT. Energy Unggul Persada</h3>
+                <p>Survey Pemetaan Area Kolam Jetty</p>
+                <ul class="content-list">
+                    <li>Bathymetry & Hidrografi</li>
+                    <li>Topografi</li>
+                    <li>Orthophoto</li>
+                    <li>Subkon Konsultan PT. Prisma Soeno</li>
+                </ul>
+                <p>Katingan, Kab. Kotawaringin Timur - Kalteng</p>
+
+                <hr>
+
+                <h3>PT. Indovisi Sentosa Mandiri</h3>
+                <p>Survey Pemetaan Area Kolam Jetty</p>
+                <ul class="content-list">
+                    <li>Bathymetry & Hidrografi</li>
+                    <li>Topografi</li>
+                    <li>Orthophoto</li>
+                    <li>Subkon Konsultan PT. Bumi Indonesia</li>
+                </ul>
+                <p>Desa Benangaq, Kab. Kutai Barat - Kaltim</p>
+
+                <hr>
+
+                <h3>PT. Katingan Indah Utama</h3>
+                <p>Survey Pemetaan Area Kolam Jetty</p>
+                <ul class="content-list">
+                    <li>Bathymetry & Hidrografi</li>
+                    <li>Topografi</li>
+                    <li>Orthophoto</li>
+                    <li>Subkon Konsultan PT. Prisma Soeno</li>
+                </ul>
+                <p>Katingan, Kab. Kotawaringin Timur - Kalteng</p>
+
+                <hr>
+
+                <h3>PT. Kalimantan Ferro Industri</h3>
+                <p>Survey pemetaan Area Kolam Dermaga</p>
+                <ul class="content-list">
+                    <li>Bathymetry & Hidrografi</li>
+                    <li>Topografi</li>
+                    <li>Subkon Konsultan PT. Anugerah Jawara Prima</li>
+                </ul>
+                <p>Pendingin, Kab. Kutai Kartanegara - Kaltim</p>
+
+                <hr>
+
+                <h3>PT. Kutai Refinery Nusantara</h3>
+                <p>Survey Bathymetry & Hidrografi Area Kolam WTP</p>
+                <p>Subkon Konsultan PT. Anugerah Jawara Prima</p>
+                <p>Kariangau, Kota Balikpapan - Kaltim</p>
+
+                <hr>
+
+                <h3>PT. Permata Jaya Shipyard</h3>
+                <p>Survey Pemetaan Area Kolam Dermaga</p>
+                <ul class="content-list">
+                    <li>Bathymetry & Hidrografi</li>
+                    <li>Topografi</li>
+                    <li>Pembuatan Dokumen Kajian Teknis Perizinan TUKS / TERSUS</li>
+                </ul>
+                <p>Loa Duri, Kab. Kutai Kartanegara - Kaltim</p>
+
+                <hr>
+
+                <h3>PT. Adhi Karya - Jaya Kontruksi</h3>
+                <p>Survey Bathymetry & Hidrografi Area Jembatan Pulau Balang</p>
+                <p>Subkon Konsultan PT. Bumi Indonesia</p>
+                <p>Sepaku, Kab. Penajam Paser Utara - Kaltim</p>
+
+                <hr>
+
+                <h3>PT. Pasir Silika Nusantara</h3>
+                <p>Survey Bathymetry & Hidrografi Area Dermaga</p>
+                <p>Subkon Konsultan PT. Citra Pamungkas Mandiri</p>
+                <p>Seruyan Ilir, Kab. Kotawaringin Timur - Kalteng</p>
+
+                <hr>
+
+                <h3>PT. Kaltim Kariangau Terminal</h3>
+                <p>Survey Pemetaan Area Kolam Jetty</p>
+                <ul class="content-list">
+                    <li>Bathymetry & Hidrografi</li>
+                    <li>Topografi</li>
+                    <li>Subkon Konsultan PT. Citra Pamungkas Mandiri</li>
+                </ul>
+                <p>Karingau, Kota Balikpapan - Kaltim</p>
+
+                <hr>
+
+                <h3>PT. Bahtera Elang Perak Indonesia</h3>
+                <p>Survey Bathymetry & Hidrografi Alur Teluk Sebangan</p>
+                <p>Teluk Sebangan, Kec. Katingan Kuala - Kalteng</p>
+
+                <hr>
+
+                <h3>PT. Bara Widya Utama</h3>
+                <p>Survey Bathymetry & Hidrografi Area Kolam Dermaga Jetty</p>
+                <p>Pantai Lango, Kab. Penajam Paser Utara - Kalteng</p>
+
+                <hr>
+
+                <h3>PT. Bumi Sarana Utama</h3>
+                <p>Survey Bathymetry & Hidrografi Area Kolam Dermaga Jetty</p>
+                <p>Pantai Lango, Kab. Penajam Paser Utara - Kalteng</p>
+
+                <hr>
+
+                <h3>PT. Delta Mahakam Coal</h3>
+                <p>Survey Pemetaan Area Kolam Jetty</p>
+                <ul class="content-list">
+                    <li>Bathymetry & Hidrografi</li>
+                    <li>Topografi</li>
+                    <li>Orthophoto</li>
+                    <li>Pembuatan Dokumen Kajian Teknis Perizinan TUKS / TERSUS</li>
+                </ul>
+                <p>Muara Kaman, Kab. Kutai Kartanegara - Kaltim</p>
+
+                <hr>
+
+                <h3>PT. Diva Kencana Borneo</h3>
+                <p>Survey Bathymetry & Hidrografi Area Kolam Dermaga Jetty</p>
+                <p>Muara Pahu, Kab. Kutai Kartanegara - Kaltim</p>
+
+                <hr>
+
+                <h3>PT. Jayanti Mudra Energi</h3>
+                <p>Survey Pemetaan Area Kolam Jetty</p>
+                <ul class="content-list">
+                    <li>Bathymetry & Hidrografi</li>
+                    <li>Topografi</li>
+                </ul>
+                <p>Loa Duri, Kab. Kutai Kartanegara - Kaltim</p>
+
+                <hr>
+
+                <h3>PT. kalimantan Argo Makmur</h3>
+                <p>Survey Bathymetry & Hidrografi Area Kolam Dermaga Jetty</p>
+                <p>Subkon Konsultan PT. Dodingkon Tongon Aloya</p>
+                <p>Muara Pahu, Kab. Kutai Kartanegara - Kaltim</p>
+
+                <hr>
+
+                <h3>PT. Masud Bersaudara</h3>
+                <p>Survey Pemetaan Area Kolam Dermaga</p>
+                <ul class="content-list">
+                    <li>Bathymetry & Hidrografi</li>
+                    <li>Topografi</li>
+                    <li>Subkon Konsultan PT. Petrosuns Internasional Terminal</li>
+                </ul>
+                <p>Pendingin, Kab. Kutai Kartanegara - Kaltim</p>
+
+                <hr>
+
+                <h3>PT. Mnoor Bulan Lestari</h3>
+                <p>Survey Bathymetry & Hidrografi Area Kolam Dermaga Jetty</p>
+                <p>Subkon Konsultan PT. Dodingkon Tongon Aloya</p>
+                <p>Muara Pahu, Kab. Kutai Kartanegara - Kaltim</p>
+
+                <hr>
+
+                <h3>PT. Nipindo</h3>
+                <p>Survey Bathymetry & Hidrografi Area Kolam Dermaga Jetty</p>
+                <p>Subkon Konsultan PT. Bumi Indonesia</p>
+                <p>Sangkulirang, Kab. Kutai Timur - Kaltim</p>
+
+                <hr>
+
+                <h3>PT. Bumi Indonesia</h3>
+                <p>Survey Topografi RSUD Sepaku</p>
+                <p>Sepaku, Kab. Penajam Paser Utara - Kaltim</p>
+
+                <hr>
+
+                <h3>PT. Prisma Soeno</h3>
+                <p>Survey Topografi RSUD Sepaku</p>
+                <p>Loa Lepuh, Kab. Kutai Kartanegara - Kaltim</p>
+
+                <hr>
+
+                <h3>PT. Dermaga Pelopor Silika Kutai</h3>
+                <p>Survey Pemetaan Area Dermaga Jetty</p>
+                <ul class="content-list">
+                    <li>Bathymetry & Hidrografi</li>
+                    <li>Topografi</li>
+                    <li>Subkon Konsultan PT. Bumi Indonesia</li>
+                </ul>
+                <p>Kutai Lama, Kab. Kutai Kartanegara - Kaltim</p>
+
+                <hr>
+
+                <h3>PT. Prambanan Konsultan</h3>
+                <p>Survey Pemetaan Area Dermaga Wisata</p>
+                <ul class="content-list">
+                    <li>Bathymetry & Hidrografi</li>
+                    <li>Topografi</li>
+                    <li>Subkon Konsultan PT. Bumi Indonesia</li>
+                </ul>
+                <p>Samarinda - Kaltim</p>
+            </div>
+        </li>
+
+        <!-- <li class="year">
+            <h2>2022</h2>
+            <div class="content">
+                <h3>PT Duta Meta Graha</h3>
+                <p>Survey Batimetri dan Hidrografi di Sungai Karang Mumus</p>
+                <p>Proyek No: SBH-101/SMD/27072007/AWOK</p>
+            </div>
+        </li> -->
+    </ul>
+
+
+    <div class="services-container">
+        <h2>Layanan dengan Mutu Terbaik</h2>
+        <p>Perusahaan Jasa Konsultan, Surveyor Geologi dan Geodesi di Berbagai Bidang</p>
+
+        <div class="services-grid">
+            <a href="/LYS-pemetaan-topography.html" class="service-card" data-aos="fade-up" data-aos-delay="150">
+                <img src="/images/agratek1.jpg" alt="Konstruksi Pelabuhan Icon">
+                <p>Pemetaan Topography</p>
+            </a>
+
+            <a href="/LYS-batimetri&hidro.html" class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="/images/bati7.jpg" alt="Batimetri & Hidrografi">
+                <p>Batimetri & Hidrografi</p>
+            </a>
+
+            <a href="/LYS-drone.html" class="service-card" data-aos="fade-up" data-aos-delay="600">
+                <img src="/images/drone2.jpg" alt="Drone Mapping">
+                <p>Drone Mapping</p>
+            </a>
+
+            <a href="/LYS-gps.html" class="service-card" data-aos="fade-up" data-aos-delay="600">
+                <img src="/images/gps3.jpg" alt="GPS GNSS">
+                <p>GPS/GNSS</p>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="cta-container" data-aos="zoom-in-up" data-aos-delay="100">
+        <h2>Yakin Proyek Anda Butuh Survei yang Tepat? Hubungi Kami untuk Hasil Optimal!</h2>
+        <p>Hubungi kami untuk konsultasi dan merencanakan proyek anda</p>
+        <a href="https://wa.me/+6285828210887?text=Halo%2C%20saya%20%5BNama%20Anda%5D%20mendapat%20kontak%20ini%20dari%20website%20Agratek%20Surveyor%20Indonesia%2C%20saya%20ingin%20menyampaikan%20%5BTujuan%20Anda%5D"
+            class="cta-button">Chat via WhatsApp</a>
+    </div>
+
+    <div class="infosingkat-container" data-aos="zoom-in" data-aos-delay="110">
+        <div class="info-content">
+            <div class="info-header">
+                <h1>Tentang CV Kami</h1>
+                <h2>Info Kontak dan Lokasi</h2>
+                <p>Pertanyaan atau informasi lebih lanjut? Jangan sungkan untuk menghubungi kami, kami selalu siap
+                    memberikan bantuan kapanpun dan dimanapun</p>
+            </div>
+            <div class="info-details">
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <strong>HP:</strong> 0811-5511-125
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>Email:</strong> Agratek.surveyorindonesia82@gmail.com
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>Alamat:</strong> Jl. Senyiur Gg. Suka Damai 2 Blok C No. 81
+                        Kelurahan Lok Bahu, Kecamatan Sungai Kunjang 
+                        Kota Samarinda, Kalimantan Timur, 75243
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6768653716483!2d117.10750691475403!3d-0.4992080996370215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df67fd5ffcabfbb%3A0xaa5fe7f157e34bf9!2sAGRATEK%20SURVEYOR%20INDONESIA!5e0!3m2!1sen!2sid!4v1624451271893!5m2!1sen!2sid"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+            <li><a
+                    href="https://www.instagram.com/cv.agrateksurveyorindonesia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><ion-icon
+                        name="logo-instagram"></ion-icon></a></li>
+            <li><a
+                    href="https://wa.me/+6285828210887?text=Halo%2C%20saya%20%5BNama%20Anda%5D%20mendapat%20kontak%20ini%20dari%20website%20Agratek%20Surveyor%20Indonesia%2C%20saya%20ingin%20menyampaikan%20%5BTujuan%20Anda%5D"><ion-icon
+                        name="logo-whatsapp"></ion-icon></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+        </ul>
+
+        <ul class="menu">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+        <p>&copy;2024 Agratek Surveyor Indonesia | All Right Reserved</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.year').forEach(year => {
+            year.addEventListener('click', () => {
+                year.classList.toggle('active');
+                const content = year.querySelector('.content');
+                if (year.classList.contains('active')) {
+                    content.style.display = 'block';
+                } else {
+                    content.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/aos.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

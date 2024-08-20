@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">    
+    <title>Agratek Surveyor Indonesia</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/aos.css">
+    <link rel="stylesheet" href="/css/line-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header id="header">
+        <a href="#" class="logo"><img src="/images/agrateklogo.png" alt="" width="235" height="75"></a>
+        <ul>
+            <li class="hideOnMobile"><a href="index.html" class="active">Home</a></li>
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="hideOnMobile"><a href="blog.html">Blog</a></li>
+            <li class="hideOnMobile"><a href="project.html">Project</a></li>
+            <li class="hideOnMobile"><a href="#">Layanan
+                    <span class="material-icons dropdown-icon">
+                        arrow_drop_down
+                    </span>
+                </a>
+                <ul class="drop-down">
+                    <a href="LYS-pemetaan-topography.html">
+                        <li>Survey Pemetaan Topografi</li>
+                    </a>
+                    <a href="LYS-batimetri&hidro.html">
+                        <li>Batimetri & Hidrografi</li>
+                    </a>
+                    <a href="LYS-drone.html">
+                        <li>Drone Mapping</li>
+                    </a>
+                    <a href="LYS-gps.html">
+                        <li>GPS/GNSS</li>
+                    </a>
+                </ul>
+            </li>
+            <li class="hideOnMobile"><a href="gallery.html">Gallery</a></li>
+            <li class="hideOnMobile"><a href="contact.html">Contact Us</a></li>
+            <li class="menu-button" onclick="showSidebar()">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+            </li>        
+        </ul>
+
+        <!-- burger -->
+        <ul class="sidebar">
+            <li class="close-btn" onclick="hideSidebar()">x</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li class="dropdown"><a href="#">Layanan
+                    <span class="material-icons dropdown-icon">
+                        arrow_drop_down
+                    </span>
+                </a>
+                <ul class="drop-down">
+                    <a href="LYS-pemetaan-topography.html">
+                        <li>Survey Pemetaan Topografi</li>
+                    </a>
+                    <a href="LYS-batimetri&hidro.html">
+                        <li>Batimetri & Hidrografi</li>
+                    </a>
+                    <a href="LYS-drone.html">
+                        <li>Drone Mapping</li>
+                    </a>
+                    <a href="LYS-gps.html">
+                        <li>GPS/GNSS</li>
+                    </a>
+                </ul>
+            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="scrolling-text-container">
+            <span>Agratek</span>
+            <marquee behavior="" direction="left">Kami berupaya menjalankan amanah sebagai surveyor dengan dedikasi dan
+                keahlian terbaik yang kami miliki</marquee>
+        </div>
+        <div class="slide-container">
+
+            <div class="slides">
+                <img src="/images/poster_agratek-1.jpg" alt="" class="active">
+                <img src="/images/poster_agratek-Topografi.jpg" alt="">
+                <img src="/images/poster_agratek-batimetri&hidrografi.jpg" alt="">
+                <img src="/images/poster_agratek-drone.jpg" alt="">
+                <img src="/images/poster_agratek-gps.jpg" alt="">
+            </div>
+
+            <div class="buttons">
+                <span class="next">&#10095;</span>
+                <span class="prev">&#10094;</span>
+            </div>
+
+            <div class="dotscontainer">
+                <div class="dot active" attr='0' onclick="switchimage(this)"></div>
+                <div class="dot" attr="1" onclick="switchimage(this)"></div>
+                <div class="dot" attr="2" onclick="switchimage(this)"></div>
+                <div class="dot" attr="3" onclick="switchimage(this)"></div>
+                <div class="dot" attr="4" onclick="switchimage(this)"></div>
+            </div>
+        </div>
+
+        <div class="cta-container" data-aos="zoom-in-up" data-aos-delay="100">
+            <h2>Kami Hadir untuk Menyelesaikan Seluruh Survey dengan Hasil Terbaik!</h2>
+            <p>Hubungi kami untuk konsultasi dan merencanakan proyek anda</p>
+            <a href="https://wa.me/+628115511125?text=Halo%2C%20saya%20%5BNama%20Anda%5D%20mendapat%20kontak%20ini%20dari%20website%20Agratek%20Surveyor%20Indonesia%2C%20saya%20ingin%20menyampaikan%20%5BTujuan%20Anda%5D"
+                class="cta-button">Chat via WhatsApp</a>
+        </div>
+
+        <div class="company-intro">
+            <div class="img-container">
+                <img src="/images/agratek-intro.jpg" alt="Agratek Surveyor Indonesia">
+            </div>
+            <div class="text-intro">
+                <h1>CV. AGRATEK SURVEYOR INDONESIA</h1>
+                <p>Agratek Surveyor Indonesia adalah perusahaan konsultan dan surveyor yang berpengalaman lebih dari 10
+                    tahun dalam berbagai bidang seperti Topografi, Drone Mapping, Batimetri & Hidrografi, serta
+                    GPS/GNSS. Kami menyediakan layanan yang didukung oleh tenaga ahli
+                    profesional dan peralatan canggih, selalu mengikuti perkembangan teknologi terbaru untuk memberikan
+                    hasil yang terbaik. Agratek Surveyor Indonesia dikenal atas kemampuan beradaptasi dengan berbagai
+                    kondisi lapangan dan komitmen untuk memenuhi kebutuhan klien
+                    dengan standar kualitas tinggi.</p>
+                <p>Agratek Surveyor Indonesia menawarkan beragam layanan profesional untuk memenuhi berbagai kebutuhan
+                    survei dan pemetaan Anda. Kami ahli dalam survei topografi, termasuk pengukuran dan pembuatan titik
+                    ikat (BM), pemetaan topografi, pemetaan potensi batubara dan
+                    mineral, serta pemetaan LIDAR dan UAV/DRONE. Selain itu, kami juga menyediakan layanan survei
+                    batimetri dan hidrografi, seperti survei pasang surut, pengukuran kedalaman dan kontur, serta
+                    pemetaan dasar laut dan sungai. Untuk kebutuhan survei modern, kami menggunakan
+                    teknologi drone untuk pemetaan area dan pengumpulan data, serta sistem GPS/GNSS untuk pemetaan
+                    infrastruktur, pengukuran ketinggian, dan koordinat titik. Agratek Surveyor Indonesia siap
+                    memberikan solusi survei terbaik dengan hasil yang akurat dan dapat diandalkan.</p>
+                <button class="profile-btn"><a href="about.html">Selengkapnya Tentang Kami</a></button>
+            </div>
+        </div>
+
+        <div class="services-container">
+            <h2>Layanan dengan Mutu Terbaik</h2>
+            <p>Perusahaan Jasa Konsultan, Surveyor Geologi dan Geodesi di Berbagai Bidang</p>
+
+            <div class="services-grid">
+                <a href="/LYS-pemetaan-topography.html" class="service-card" data-aos="fade-up" data-aos-delay="150">
+                    <img src="/images/agratek1.jpg" alt="Konstruksi Pelabuhan Icon">
+                    <p>Pemetaan Topography</p>
+                </a>
+
+                <a href="/LYS-batimetri&hidro.html" class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="/images/bati7.jpg" alt="Batimetri & Hidrografi">
+                    <p>Batimetri & Hidrografi</p>
+                </a>
+
+                <a href="/LYS-drone.html" class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <img src="/images/drone2.jpg" alt="Drone Mapping">
+                    <p>Drone Mapping</p>
+                </a>
+
+                <a href="/LYS-gps.html" class="service-card"  data-aos="fade-up" data-aos-delay="600">
+                    <img src="/images/gps3.jpg" alt="GPS GNSS">
+                    <p>GPS/GNSS</p>
+                </a>
+                <!-- Repeat for each service -->
+            </div>
+        </div>
+
+        <div class="hero">
+            <h1>Kenapa Kami Tepat Untuk Anda?</h1>
+            <p>Ahli dalam Layanan Konsultasi, Survei, dan Investigasi Geologi serta Geodesi</p>
+        </div>
+
+        <div class="features">
+            <div class="feature-card" data-aos="fade-down" data-aos-delay="150">
+                <div class="feature-icon"><i class="fa-solid fa-users-gear"></i></div>
+                <h3 class="feature-title">Tim Profesional dan Berpengalaman</h3>
+                <p>Agratek didukung oleh tim ahli yang berpengalaman dan profesional di bidang geologi dan geodesi,
+                    memastikan setiap proyek ditangani dengan kompetensi tinggi.</p>
+            </div>
+            <div class="feature-card" data-aos="fade-down" data-aos-delay="300">
+                <div class="feature-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+                <h3 class="feature-title">Layanan Komprehensif</h3>
+                <p>Menyediakan berbagai layanan mulai dari survei topografi, batimetri, drone mapping, hingga survei
+                    GPS/GNSS, Agratek adalah solusi satu atap untuk kebutuhan survei dan konsultasi Anda.</p>
+            </div>
+            <div class="feature-card" data-aos="fade-down" data-aos-delay="450">
+                <div class="feature-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                <h3 class="feature-title">Komitmen Terhadap Kualitas dan Amanah</h3>
+                <p>Dengan nilai-nilai amanah dan integritas, Agratek selalu berkomitmen untuk memberikan hasil terbaik
+                    yang memenuhi atau melampaui harapan klien</p>
+            </div>
+
+            <div class="client-section">
+                <h2>Our Partner & Client</h2>
+                <div class="client-logos">
+                    <a href="https://www.dephub.go.id/" data-aos="zoom-in" data-aos-delay="110"><img src="/images/CP-kemenhub.png"
+                        alt="Logo Kemenhub png"></a>
+                    <a href="https://www.mitsubishi-motors.co.id/" data-aos="zoom-in" data-aos-delay="110"><img src="/images/CP-mitshubishi.png"
+                        alt="Logo Mitshubishi png"></a>
+                    <a href="https://www.facebook.com/dishubkotasmr/" data-aos="zoom-in" data-aos-delay="140"><img src="/images/CP-dishubsmd.jpg"
+                            alt="Logo Dishub samarinda"></a>                            
+                    <a href="https://www.pertamina.com/" data-aos="zoom-in" data-aos-delay="160"><img src="/images/CP-pertamina.png"
+                            alt="Logo Pertamina png"></a>
+                    <a href="https://www.hutamakarya.com/" data-aos="zoom-in" data-aos-delay="180"><img src="/images/CP-hutamakarya.png"
+                            alt="Logo Hutama Karya HK png"></a>
+                    <a href="https://www.nindyakarya.co.id/" data-aos="zoom-in" data-aos-delay="199"><img src="/images/CP-nindyakarya.png"
+                            alt="Logo Nindya Karya NK png"></a>
+                    <a href="https://www.wika.co.id/en" data-aos="zoom-in" data-aos-delay="210"><img src="/images/CP-wijayakarya.png"
+                            alt="Logo Wijaya Karya WIKA png"></a>
+                    <a href="https://www.pelindo.co.id/" data-aos="zoom-in" data-aos-delay="110"><img src="/images/CP-pelindo.png"
+                        alt="Logo Pelindo png"></a>
+                    <a href="https://www.ptpp.co.id/id" data-aos="zoom-in" data-aos-delay="290"><img src="/images/CP-pp.png"
+                            alt="Logo PT Pembangunan Perumahan"></a>
+                    
+                    
+                    <a href="https://www.apicalgroup.com/id/" data-aos="zoom-in" data-aos-delay="360"><img src="/images/CP-apical-group-ltd.png"
+                        alt="Logo Apical Group Ltd"></a>
+                    <a href="https://adhi.co.id/" data-aos="zoom-in" data-aos-delay="360"><img src="/images/CP-adhi-karya.png"
+                        alt="Logo Adhi Karya png"></a>
+                    <a href="#" data-aos="zoom-in" data-aos-delay="140"><img src="/images/CP-kfi.png"
+                            alt="Logo KFI png"></a>             
+                    <a href="https://ptb.co.id/in/" data-aos="zoom-in" data-aos-delay="160"><img src="/images/CP-pelabuhan-tiga-bersaudara.png"
+                        alt="Logo Pelabuhan Tiga Bersaudara png"></a>               
+                    <a href="https://www.samudera.id/" data-aos="zoom-in" data-aos-delay="160"><img src="/images/CP-samudera-indonesia.png"
+                            alt="Logo Samudera Indonesia png"></a>
+                    <a href="http://www.cpmgroup.co.id/" data-aos="zoom-in" data-aos-delay="180"><img src="/images/CP-cpm.png"
+                            alt="Logo Citra Panji Manunggal CPM png"></a>
+                    <a href="#" data-aos="zoom-in" data-aos-delay="199"><img src="/images/CP-kutai-energi.png"
+                            alt="Logo Kutai Energi png"></a>
+                    <a href="https://web.kariangauterminal.co.id/" data-aos="zoom-in" data-aos-delay="199"><img src="/images/CP-kaltim-kariangau-terminal.png"
+                            alt="Logo Kaltim Kariangau Terminal png"></a>
+                    <a href="https://glints.com/id/companies/pt-matahari-kahuripan-indonesia-makin-group/0fbe2faf-b7c4-4fe3-8082-b7517d7502fd" data-aos="zoom-in" data-aos-delay="210"><img src="/images/cp-makingroup.png"
+                            alt="Logo abp energy alamjaya bara pratama png"></a>
+                    <a href="https://kawanselarassejahtera.com/" data-aos="zoom-in" data-aos-delay="290"><img src="/images/CP-kss.png"
+                            alt="Logo kawan selaras sejahtera kss png"></a>
+                    <a href="#" data-aos="zoom-in" data-aos-delay="360"><img src="/images/CP-pit.jpeg"
+                            alt="Logo Petrosuns Internasional Terminal PIT hd"></a>
+                </div>
+            </div>
+
+            <div class="infosingkat-container">
+                <div class="info-content">
+                    <div class="info-header">
+                        <h1>Tentang CV Kami</h1>
+                        <h2>Info Kontak dan Lokasi</h2>
+                        <p>Pertanyaan atau informasi lebih lanjut? Jangan sungkan untuk menghubungi kami, kami selalu siap memberikan bantuan kapanpun dan dimanapun</p>
+                    </div>
+                    <div class="info-details">
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>HP:</strong> 0811-5511-125
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email:</strong> Agratek.surveyorindonesia82@gmail.com
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Alamat:</strong> Jl. Senyiur Gg. Suka Damai 2 Blok C No. 81 
+                                Kelurahan Lok Bahu, Kecamatan Sungai Kunjang 
+                                Kota Samarinda, Kalimantan Timur, 75243
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6768653716483!2d117.10750691475403!3d-0.4992080996370215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df67fd5ffcabfbb%3A0xaa5fe7f157e34bf9!2sAGRATEK%20SURVEYOR%20INDONESIA!5e0!3m2!1sen!2sid!4v1624451271893!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+    </main>
+
+    <!-- <div class="sec" id="sec">
+        <h2 id="explore" data-aos="zoom-in-up" data-aos-delay="150" style="text-align: center;">Agratek Surveyor Indonesia</h2>
+        <h3 data-aos="zoom-in" data-aos-delay="400" style="text-align: center;">Ahli dan Profesional sebagai Perusahaan Jasa Survey Oceanography, Topography dan Bathymetry</h3>
+        <div class="card" data-aos="zoom-in-up" data-aos-delay="350">
+            <img src="/images/agratek1.jpg" class="card-img" alt="Agratek Indonesia">
+            <div class="card-body">
+                <h1 class="card-title">Agratek Surveyor</h1>
+                <p class="card-sub-title">Indonesia</p>
+                <p class="card-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus minima necessitatibus eum doloremque eaque! Rem quod vero esse aliquid quis animi vel error totam optio, delectus iure dicta praesentium corporis.</p>
+            </div>
+        </div>
+        <p data-aos="fade-up" data-aos-delay="700" style="text-align: center;">AGRATEK SURVEYOR merupakan perusahaan Jasa Konsultan & Kontraktor Sipil Bangunan yang sementara berfokus pada bidang Jasa Konsultan Pekerjaan Soil Investigation (Sondir, Deep Bor SPT, Uji Lab. Mekanika Tanah), Survey Pemetaan Topografi (Pengukuran Topografi, GNSS/GPS Geodetik RTK, Pengukuran Bangunan Sipil, Pengukuran Kemiringan Bangunan, Pengukuran Penentuan Titik Pancang Stake Out, Pembuatan BM, Pengukuran GCP, Pengukuran Volume Cut & Fill Tanah, Photo Udara UAV), Survey Oseanografi (Pengukuran Batimetri, Current Meter, Pengukuran Pasang-Surut Laut, Uji Sampel Sediman), Bor Pile, Strauss Pile, Gelistrik, Sumur Bor, DCP, Core Drill, CBR.</p>
+    </div> -->
+    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#047082" fill-opacity="1" d="M0,128L48,122.7C96,117,192,107,288,122.7C384,139,480,181,576,197.3C672,213,768,203,864,170.7C960,139,1056,85,1152,74.7C1248,64,1344,96,1392,112L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>     -->
+
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+            <li><a
+                    href="https://www.instagram.com/cv.agrateksurveyorindonesia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><ion-icon
+                        name="logo-instagram"></ion-icon></a></li>
+            <li><a
+                    href="https://wa.me/+628115511125?text=Halo%2C%20saya%20%5BNama%20Anda%5D%20mendapat%20kontak%20ini%20dari%20website%20Agratek%20Surveyor%20Indonesia%2C%20saya%20ingin%20menyampaikan%20%5BTujuan%20Anda%5D"><ion-icon
+                        name="logo-whatsapp"></ion-icon></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+        </ul>
+
+        <ul class="menu">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+        <p>&copy;2024 Agratek Surveyor Indonesia | All Right Reserved</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/aos.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

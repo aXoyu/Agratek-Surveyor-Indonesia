@@ -1,0 +1,759 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #222;
+    min-height: 100vh;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+#header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header ul li {
+    list-style: none;
+    margin-left: 20px;
+    position: relative;
+}
+
+#header ul li a {
+    text-decoration: none;
+    display: flex;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#header ul li .drop-down {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 350px;
+    background: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+#header ul li .drop-down a {
+    color: #094b65;
+}
+
+#header ul li:hover .drop-down {
+    display: block;
+}
+
+#header ul li:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+.dropdown-icon {
+    font-size: 20px;
+    position: relative;
+    right: -5px;
+    transform: rotate(0deg);
+    transition: 0.1s ease-in-out all;
+}
+
+.drop-down li:hover {
+    background: #094b65;
+    color: #fff;
+    border-radius: 0.5mm;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#header ul li .drop-down li {
+    margin: 0;
+    padding: 0;
+}
+
+#header ul li .drop-down li a {
+    padding: 10px 15px;
+    color: #094b65;
+    display: block;
+    text-align: left;
+    border-radius: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+#header ul li .drop-down li a:hover {
+    background: #094b65;
+    color: #fff;
+}
+
+#header ul li a:hover,
+#header ul li a.active {
+    background: #094b65;
+    color: #fff;
+}
+
+.contact {
+    position: relative;
+    min-height: 100vh;
+    margin-top: 130px;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #222;
+}
+
+.contact .content {
+    color: #fff;
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2 {
+    margin-top: 20px;
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.contact .content p {
+    color: white;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.contactinfo {
+    width: 50%;
+}
+
+.section-title {
+    color: #3586ff;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.address-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.address-box {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.address-box h3 {
+    color: #3586ff;
+    margin-bottom: 10px;
+}
+
+.address-box p {
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.contact-details .box {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-details .box.email {
+    flex: 2;
+}
+
+.contact-details .box h3 {
+    color: #3586ff;
+    margin-bottom: 10px;
+}
+
+.contact-details .box p,
+.contact-details .box a {
+    color: #fff;
+    font-size: 0.9em;
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.contact-details .box a:hover {
+    text-decoration: underline;
+}
+
+.txt {
+    color: #fff;
+    margin-top: 30px;
+    font-weight: 500;
+    border-left: 50px solid #3586ff;
+    padding-left: 10px;
+    line-height: 1em;
+}
+
+.sci {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    color: #fff;
+    font-size: 1.5em;
+    transition: 0.25s;
+}
+
+.sci li a:hover {
+    color: #3586ff;
+}
+
+.contactform {
+    width: 40%;
+    background: repeating-conic-gradient(from var(--a), #3586ff 0%, #3586ff 10%, transparent 10%, transparent 50%);
+    animation: animate 6s linear infinite;
+    padding: 60px;
+    position: relative;
+}
+
+.contactform::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-conic-gradient(from var(--a), #3586ff 0%, #3586ff 10%, transparent 10%, transparent 50%);
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+}
+
+.contactform::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    border: 20px solid #222;
+    background: #333;
+}
+
+@property --a {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+@keyframes animate {
+    0% {
+        --a: 0deg
+    }
+    100% {
+        --a: 360deg
+    }
+}
+
+.contactform form {
+    position: relative;
+    z-index: 10;
+}
+
+.contactform form h2 {
+    font-size: 2em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.contactform form .inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.contactform form .inputbox input,
+.contactform form .inputbox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1.1em;
+    margin: 10px 0;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #3586ff;
+    color: #fff;
+    outline: none;
+    resize: none;
+}
+
+.contactform form .inputbox span {
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    padding: 3px 0;
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.contactform form .inputbox input:focus ~ span,
+.contactform form .inputbox textarea:focus ~ span,
+.contactform form .inputbox input:valid ~ span,
+.contactform form .inputbox textarea:valid ~ span {
+    color: #3586ff;
+    font-size: 0.9em;
+    transform: translateY(-24px);
+}
+
+.contactform form .inputbox input[type="submit"] {
+    width: 100%;
+    background: #3586ff;
+    color: #222;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+footer {
+    background: #3586ff;
+    width: 100%;
+    min-height: 100px;
+    margin-top: 100px;
+    padding: 20px 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .social-icon,
+footer .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer .social-icon li,
+footer .menu li {
+    list-style: none;
+}
+
+footer .social-icon li a {
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5%;
+}
+
+footer .social-icon li a:hover {
+    transform: translateY(-10px);
+}
+
+footer .menu li a {
+    font-size: 1.1em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75s;
+}
+
+footer .menu li a:hover {
+    opacity: 1;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('/images/wave.png');
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_2 4s linear infinite;
+}
+
+footer .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave 3s linear infinite;
+}
+
+footer .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_2 3s linear infinite;
+}
+
+@keyframes animateWave {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_2 {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 80%;
+    max-width: 400px;
+    z-index: 999;
+    background-color: #222;
+    backdrop-filter: blur(5px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: right 0.3s ease-in-out;
+    padding-top: 60px;
+}
+
+.sidebar .dropdown .drop-down {
+    display: none;
+    padding-left: 20px;
+}
+
+.sidebar .dropdown.active .drop-down {
+    display: block;
+}
+
+.sidebar .dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar .dropdown-icon {
+    transition: transform 0.3s ease;
+}
+
+.sidebar .dropdown.active .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.sidebar li {
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.sidebar a {
+    width: 100%;
+    display: block;
+    color: #094b65;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    color: white;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu-button {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    #header {
+        padding: 20px;
+    }
+
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .contact {
+        padding: 10px 30px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactinfo,
+    .contactform {
+        width: 100%;
+    }
+
+    .address-container {
+        flex-direction: column;
+    }
+
+    .address-box, 
+    .contact-details .box {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .contact-details .box.email a {
+        font-size: 0.75em;
+    }
+
+    .contact-details {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .contact-details .box {
+        width: calc(50% - 10px);
+    }
+
+    .contact-details .box.email {
+        width: 100%;
+    }
+
+    .contactform {
+        margin-top: 30px;
+    }
+
+    .contact .content h2 {
+        font-size: 2.5em;
+    }
+
+    .section-title {
+        font-size: 2.2em;
+    }
+
+    .address-box h3,
+    .contact-details .box h3 {
+        font-size: 1.3em;
+    }
+
+    .address-box p,
+    .contact-details .box p,
+    .contact-details .box a {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 400px) {
+    #header {
+        padding: 15px;
+    }
+ 
+    .sidebar {
+        width: 100%; /* Mengubah lebar menjadi 100% */
+        max-width: none; /* Menghapus batasan max-width */
+        padding-top: 50px; /* Menyesuaikan padding atas jika diperlukan */
+    }
+
+    .sidebar li {
+        padding: 8px 15px; /* Menyesuaikan padding untuk item menu */
+    }
+
+    .close-btn {
+        top: 10px; /* Menyesuaikan posisi tombol tutup */
+        right: 15px;
+    }
+
+    .contact {
+        padding: 10px 20px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .contact .content h2 {
+        font-size: 2em;
+    }
+
+    .section-title {
+        font-size: 1.8em;
+    }
+
+    .address-container {
+        flex-direction: column;
+    }
+
+    .address-box,
+    .contact-details .box {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .contact-details {
+        flex-direction: column;
+    }
+
+    .contact-details .box,
+    .contact-details .box.email {
+        width: 100%;
+    }
+
+    .address-box h3,
+    .contact-details .box h3 {
+        font-size: 1.1em;
+        margin-bottom: 5px;
+    }
+
+    .address-box p,
+    .contact-details .box p,
+    .contact-details .box a {
+        font-size: 0.8em;
+        line-height: 1.3;
+    }
+
+    .contact-details .box.email a {
+        font-size: 0.75em;
+        word-break: break-all;
+    }
+
+    .txt {
+        font-size: 1.2em;
+        margin-top: 20px;
+    }
+
+    .sci {
+        margin-top: 10px;
+    }
+
+    .sci li a {
+        font-size: 1.2em;
+    }
+
+    .contactform {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .contactform form h2 {
+        font-size: 1.6em;
+        margin-bottom: 15px;
+    }
+
+    .contactform form .inputbox {
+        margin-top: 10px;
+    }
+
+    .contactform form .inputbox input,
+    .contactform form .inputbox textarea {
+        font-size: 0.9em;
+        padding: 5px 0;
+    }
+
+    .contactform form .inputbox input[type="submit"] {
+        font-size: 0.9em;
+        padding: 8px 0;
+        margin-top: 15px;
+    }
+
+    footer .social-icon{
+        margin-top: -10px;
+        margin-right: 10px;
+    }
+
+    footer .menu li{
+        margin-right: 3px;
+    }
+
+    footer .menu li a {
+        font-size: 0.7em;
+        margin: 0 5px;
+    }
+
+    footer p {
+        font-size: 0.5em;
+        margin-left: 30px;
+    }
+}

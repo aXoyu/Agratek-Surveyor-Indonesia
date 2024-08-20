@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Pemetaan Topografi Agratek Surveyor</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/aos.css">
+    <link rel="stylesheet" href="/css/line-awesome.min.css">
+    <link rel="stylesheet" href="/css/LYstyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <a href="#" class="logo"><img src="/images/agrateklogo.png" alt="" width="235" height="75"></a>
+        <ul>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="hideOnMobile"><a href="blog.html">Blog</a></li>
+            <li class="hideOnMobile"><a href="project.html">Project</a></li>
+            <li class="hideOnMobile"><a href="#">Layanan
+                    <span class="material-icons dropdown-icon">
+                        arrow_drop_down
+                    </span>
+                </a>
+                <ul class="drop-down">
+                    <a href="/LYS-pemetaan-topography.html">
+                        <li>Survey Pemetaan Topografi</li>
+                    </a>
+                    <a href="LYS-batimetri&hidro.html">
+                        <li>Batimetri & Hidrografi</li>
+                    </a>
+                    <a href="LYS-drone.html">
+                        <li>Drone Mapping</li>
+                    </a>
+                    <a href="LYS-gps.html">
+                        <li>GPS/GNSS</li>
+                    </a>
+                </ul>
+            </li>
+            <li class="hideOnMobile"><a href="gallery.html">Gallery</a></li>
+            <li class="hideOnMobile"><a href="contact.html"  class="active">Contact Us</a></li>
+            <li class="menu-button" onclick="showSidebar()">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+            </li> 
+        </ul>
+
+        <!-- burger -->
+        <ul class="sidebar">
+            <li class="close-btn" onclick="hideSidebar()">x</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li class="dropdown"><a href="#">Layanan
+                    <span class="material-icons dropdown-icon">
+                        arrow_drop_down
+                    </span>
+                </a>
+                <ul class="drop-down">
+                    <a href="LYS-pemetaan-topography.html">
+                        <li>Survey Pemetaan Topografi</li>
+                    </a>
+                    <a href="LYS-batimetri&hidro.html">
+                        <li>Batimetri & Hidrografi</li>
+                    </a>
+                    <a href="LYS-drone.html">
+                        <li>Drone Mapping</li>
+                    </a>
+                    <a href="LYS-gps.html">
+                        <li>GPS/GNSS</li>
+                    </a>
+                </ul>
+            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1>GPS/GNSS</h1>
+                    <p>CV Agratek Surveyor Indonesia menyediakan layanan pemetaan akurat dengan teknologi GPS dan GNSS.
+                        Alat-alat canggih kami memastikan setiap pengukuran dilakukan dengan presisi tinggi, memberikan
+                        hasil
+                        optimal untuk berbagai proyek Anda.</p>
+                </div>
+                <div class="col-md-4">
+                    <nav class="breadcrumb">
+                        <a href="index.html">Home </a> /
+                        <span>GPS/GNSS</span>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-foto">
+        <div class="slider">
+            <div class="slides" style="--img: url('/images/gps2.jpg')">
+                <div class="content">
+                    <h2>GPS/GNSS</h2>
+                    <p>Agratek Surveyor Indonesia</p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('/images/gps7.jpg')">
+                <div class="content">
+                    <h2>GPS/GNSS</h2>
+                    <p>Agratek Surveyor Indonesia</p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('/images/gps1.jpg')">
+                <div class="content">
+                    <h2>GPS/GNSS</h2>
+                    <p>Agratek Surveyor Indonesia</p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('/images/gps4.jpg')">
+                <div class="content">
+                    <h2>GPS/GNSS</h2>
+                    <p>Agratek Surveyor Indonesia</p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('/images/gps5.jpg')">
+                <div class="content">
+                    <h2>GPS/GNSS</h2>
+                    <p>Agratek Surveyor Indonesia</p>
+                </div>
+            </div>
+            <div class="slides" style="--img: url('/images/gps6.jpg')">
+                <div class="content">
+                    <h2>GPS/GNSS</h2>
+                    <p>Agratek Surveyor Indonesia</p>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <span class="prev"></span>
+            <span class="next"></span>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="opening-text">
+            <p>
+                CV Agratek Surveyor Indonesia menawarkan solusi pemetaan canggih melalui layanan GPS/GNSS.
+                Dengan memanfaatkan teknologi Global Positioning System (GPS) dan Global Navigation Satellite System
+                (GNSS),
+                kami menyediakan layanan pemetaan yang sangat akurat dan terpercaya. Alat-alat modern kami memastikan
+                bahwa setiap
+                pengukuran dan pemetaan dilakukan dengan presisi tinggi, memberikan hasil yang optimal untuk berbagai
+                kebutuhan proyek Anda.</p>
+        </div>
+
+
+        <div class="rincian-lengkap">
+            <h2>Jasa survey GPS/GNSS yang kami sediakan meliputi:</h2>
+            <ul>
+                <li>Pengukuran koordinat titik</li>
+                <li>Monitoring deformasi</li>
+                <li>Pengukuran topografi</li>
+                <li>Pemetaan jaringan utilitas</li>
+                <li>Pemetaan infrastruktur</li>
+                <li>Survei batas lahan</li>
+                <li>Pemantauan dan analisis perubahan lahan</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="services-container">
+        <h2>Layanan Lainnya Yang Kami Sediakan</h2>
+        <p>Perusahaan Jasa Konsultan, Surveyor Geologi dan Geodesi di Berbagai Bidang</p>
+
+        <div class="services-grid">
+            <a href="/LYS-pemetaan-topography.html" class="service-card">
+                <img src="/images/agratek1.jpg" alt="Pemetaan Topografi">
+                <p>Pemetaan Topography</p>
+            </a>
+
+            <a href="/LYS-batimetri&hidro.html" class="service-card">
+                <img src="/images/bati7.jpg" alt="Batimetri & Hidrografi">
+                <p>Batimetri & Hidrografi</p>
+            </a>
+
+            <a href="/LYS-drone.html" class="service-card">
+                <img src="/images/drone2.jpg" alt="Drone Mapping">
+                <p>Drone Mapping</p>
+            </a>
+
+            <a href="/LYS-gps.html" class="service-card">
+                <img src="/images/gps3.jpg" alt="GPS GNSS">
+                <p>GPS/GNSS</p>
+            </a>
+            <!-- Repeat for each service -->
+        </div>
+    </div>
+<!-- alat -->
+<div class="main-content2">
+    <div class="judul-content2">
+        <h2>Beberapa Alat Yang Kami Gunakan</h2>
+    </div>
+</div>
+
+<div class="row2">
+    <div class="img-wrapper">
+        <img src="/images/design-totalstation.jpg" alt="">
+    </div>
+
+    <div class="content-wrapper">
+        <div class="content2">
+            <span class="text-wrapper">
+                <span></span>Peralatan
+            </span>
+            <h2>Total Station</h2>
+            <p>Total Station adalah alat survei terintegrasi yang digunakan untuk mengukur jarak, sudut
+                horizontal,
+                dan sudut vertikal dengan presisi tinggi. Alat ini menggabungkan fungsi teodolit dan EDM
+                (Electronic
+                Distance Measurement) dalam satu perangkat,
+                memungkinkan surveyor untuk menentukan posisi titik-titik di lapangan dengan sangat akurat.
+                Total
+                Station sering digunakan dalam berbagai aplikasi survei termasuk pemetaan topografi, konstruksi
+                bangunan, pembuatan patok batas, dan pengukuran tanah.
+                Dengan fitur digital dan kemampuan untuk menyimpan data pengukuran, Total Station memudahkan
+                analisis dan transfer data ke perangkat lunak pemetaan dan CAD untuk pemrosesan lebih lanjut.
+            </p>
+
+            <p>Penggunaannya melibatkan pemasangan pada tripod, kalibrasi untuk memastikan alat dalam posisi
+                rata,
+                dan pengaturan koordinat awal. Alat ini mengarahkan teleskop ke prisma reflektor untuk mengukur
+                sudut horizontal dan vertikal, serta jarak dengan mengirimkan
+                dan menerima sinyal elektromagnetik. Data yang diperoleh disimpan secara digital dan dapat
+                ditransfer ke perangkat lunak pemetaan untuk analisis lebih lanjut, membuatnya ideal untuk
+                berbagai
+                aplikasi survei dan pemetaan.
+            </p>
+            <!-- <a href="#" class="read-more-btn">Read More About Total Station <i class="fas fa-arrow-right"></i></a> -->
+        </div>
+    </div>
+</div>
+
+<div class="row3">
+
+    <div class="content-wrapper">
+        <div class="content2">
+            <span class="text-wrapper">
+                Peralatan<span></span>
+            </span>
+            <h2>Automatic Level Waterpass</h2>
+            <p>Auto Level adalah alat optik yang digunakan dalam survei untuk menentukan ketinggian suatu titik
+                relatif terhadap titik referensi tertentu. Alat ini dilengkapi dengan pendulum internal yang
+                secara
+                otomatis menyelaraskan garis pandang agar selalu mendatar.
+                Dengan menggunakan Auto Level, surveyor dapat mengukur perbedaan ketinggian secara akurat, yang
+                sangat penting dalam pemetaan tanah, konstruksi, dan rekayasa sipil. Alat ini bekerja dengan
+                prinsip
+                optik sederhana yang memungkinkan pengguna untuk melihat melalui
+                teropong dan membaca nilai skala pada rambu ukur (staff) yang ditempatkan di titik yang akan
+                diukur.
+            </p>
+
+            <p>Cara menggunakan Auto Level dimulai dengan memasangnya pada tripod dan melakukan penyetelan kasar
+                menggunakan sekrup penyetel untuk memastikan alat tersebut stabil dan mendatar. Setelah itu,
+                pengguna melihat melalui teropong untuk mengarahkan alat ke rambu ukur yang
+                telah diposisikan di titik yang diinginkan. Auto Level kemudian membaca nilai skala pada rambu
+                ukur,
+                memungkinkan pengguna untuk menghitung perbedaan ketinggian antara titik referensi dan titik
+                yang
+                diukur. Dengan langkah-langkah ini, surveyor dapat memastikan bahwa
+                pengukuran yang dilakukan akurat dan dapat diandalkan.
+            </p>
+            <a href="/blog-automatic_level.html" class="read-more-btn">Read More About Automatic Level Waterpass <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <div class="img-wrapper">
+        <img src="/images/design-autolevel.jpg" alt="">
+    </div>
+</div>
+
+<div class="row4">
+    <div class="img-wrapper">
+        <img src="/images/design-theo&tripod.jpg" alt="">
+    </div>
+
+    <div class="content-wrapper">
+        <div class="content2">
+            <span class="text-wrapper">
+                <span></span>Peralatan
+            </span>
+            <h2>Theodolite & Tripod Surveyor</h2>
+            <p> Theodolite adalah alat ukur presisi tinggi yang digunakan untuk mengukur sudut horizontal dan
+                vertikal
+                dalam survei geodetik, konstruksi, dan pemetaan. Tripod surveyor adalah penyangga dengan tiga
+                kaki yang
+                digunakan untuk menopang theodolite atau perangkat survei lainnya, memastikan stabilitas dan
+                keakuratan pengukuran.</p>
+
+            <p>Pasang theodolite pada tripod di lokasi yang stabil dan rata. Sesuaikan tinggi tripod dan
+                pusatkan theodolite
+                di atas titik referensi. Gunakan leveling screws untuk meratakan theodolite. Bidik target
+                menggunakan teleskop,
+                baca sudut horizontal dan vertikal dari skala lingkaran sudut, dan rekam hasil pengukuran.
+                Pastikan tripod tetap
+                stabil selama seluruh proses untuk hasil yang akurat. Tripod juga bisa digunakan untuk menopang
+                berbagai alat yang
+                kami pakai, tidak hanya Theodolite saja.
+            </p>
+            <a href="/blog-automatic_level.html#theodolite" class="read-more-btn">Read More About Theodolite & Tripod Surveyor <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
+
+<div class="row3">
+
+    <div class="content-wrapper">
+        <div class="content2">
+            <span class="text-wrapper">
+                Peralatan<span></span>
+            </span>
+            <h2>GPS Geodetic</h2>
+            <p>GPS Geodetic adalah perangkat yang menggunakan sistem satelit untuk menentukan posisi titik di
+                permukaan
+                bumi dengan akurasi tinggi. Alat ini sering digunakan dalam survei geodetik, yang memerlukan
+                presisi yang
+                sangat tinggi, seperti pemetaan topografi, pengukuran tanah, dan aplikasi rekayasa sipil. GPS
+                Geodetic menggunakan
+                sinyal dari berbagai satelit GNSS (Global Navigation Satellite System) untuk mengukur koordinat
+                titik dengan ketelitian sub-sentimeter.
+            </p>
+
+            <p>Menggunakan GPS Geodetic melibatkan beberapa langkah utama. Pertama, pasang receiver GPS pada
+                tripod untuk memastikan stabilitas selama pengukuran.
+                Kemudian, hidupkan perangkat dan tunggu hingga memperoleh sinyal dari satelit yang cukup untuk
+                mendapatkan posisi yang akurat. Setelah itu, mulailah
+                pengukuran dengan mengikuti prosedur yang ditentukan oleh perangkat lunak pada GPS tersebut,
+                seperti menentukan titik referensi dan melakukan pengukuran
+                titik-titik yang diinginkan. Data yang diperoleh kemudian dapat diunduh dan diolah untuk
+                menghasilkan peta atau laporan survei yang detail.
+            </p>
+            <a href="/blog-gpsrtk.html" class="read-more-btn">Read More About GPS Geodetic <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <div class="img-wrapper">
+        <img src="/images/design-gpsgeo.jpg" alt="">
+    </div>
+</div>
+
+<div class="row4">
+    <div class="img-wrapper">
+        <img src="/images/design-rambuukur.jpg" alt="">
+    </div>
+
+    <div class="content-wrapper">
+        <div class="content2">
+            <span class="text-wrapper">
+                <span></span>Peralatan
+            </span>
+            <h2>Rambu Ukur</h2>
+            <p> Rambu Ukur adalah alat ukur yang digunakan dalam survei dan pemetaan untuk menentukan ketinggian
+                atau elevasi
+                titik-titik di lapangan. Alat ini biasanya berupa tongkat panjang dengan skala pengukuran yang
+                tertera di sepanjang
+                bagiannya. Rambu ukur sering digunakan bersama dengan alat ukur lainnya seperti theodolite atau
+                total station untuk
+                mendapatkan data elevasi yang akurat dan membantu dalam membuat profil tanah atau peta kontur.
+            </p>
+
+            <p>Menggunakan rambu ukur melibatkan beberapa langkah sederhana. Pertama, pasang rambu ukur secara
+                vertikal di titik yang
+                akan diukur. Pastikan rambu dalam posisi tegak lurus dengan menggunakan waterpass jika tersedia.
+                Kemudian, dari jarak
+                tertentu, gunakan alat ukur seperti theodolite atau total station untuk membaca skala yang
+                tertera pada rambu. Operator
+                alat ukur akan mencatat pembacaan elevasi dari titik tersebut. Data ini kemudian dapat digunakan
+                untuk menghitung perbedaan
+                ketinggian antara titik-titik yang diukur dan membuat peta atau profil tanah yang diperlukan.
+            </p>
+            <a href="/blog-automatic_level.html#rambu" class="read-more-btn">Read More About Rambu Ukur <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
+
+<div class="row3">
+
+    <div class="content-wrapper">
+        <div class="content2">
+            <span class="text-wrapper">
+                Peralatan<span></span>
+            </span>
+            <h2>Drone</h2>
+            <p>Drone, atau pesawat tanpa awak, adalah perangkat terbang yang dikendalikan dari jarak jauh atau
+                menggunakan teknologi otomatisasi. Dalam konteks survei
+                dan pemetaan, drone dilengkapi dengan kamera atau sensor khusus untuk mengumpulkan data visual
+                dan geografis. Drone sangat efektif untuk survei area yang
+                luas atau sulit dijangkau, serta untuk menghasilkan peta topografi, model 3D, dan data ortofoto
+                dengan akurasi tinggi.
+            </p>
+
+            <p>Mengoperasikan drone untuk survei memerlukan perencanaan dan keterampilan tertentu. Pertama,
+                operator harus merencanakan jalur penerbangan dan area yang akan
+                dipetakan menggunakan perangkat lunak khusus. Setelah rute ditentukan, drone diterbangkan sesuai
+                dengan jalur yang telah diatur. Selama penerbangan, drone akan
+                mengambil gambar atau mengumpulkan data sesuai dengan sensor yang digunakan. Setelah misi
+                selesai, data yang dikumpulkan diproses menggunakan perangkat lunak pemetaan
+                untuk menghasilkan peta, model 3D, atau analisis data lainnya. Operator harus memastikan drone
+                diterbangkan dengan aman dan sesuai dengan peraturan penerbangan yang berlaku.
+            </p>
+            <!-- <a href="#" class="read-more-btn">Read More About Drone <i class="fas fa-arrow-right"></i></a> -->
+        </div>
+    </div>
+
+    <div class="img-wrapper">
+        <img src="/images/design-drone.jpg" alt="">
+    </div>
+</div>
+
+<!-- update dari sini -->
+
+<div class="row4">
+    <div class="img-wrapper">
+        <img src="/images/design-echosounder.jpg" alt="">
+    </div>
+
+    <div class="content-wrapper">
+        <div class="content2">
+            <span class="text-wrapper">
+                <span></span>Peralatan
+            </span>
+            <h2>Echosounder</h2>
+            <p> Echosounder adalah alat elektronik yang digunakan untuk mengukur kedalaman air dengan cara memanfaatkan 
+                prinsip gelombang suara. Alat ini mengirimkan gelombang suara dari transduser yang terpasang di kapal ke 
+                dasar laut atau perairan lainnya. Ketika gelombang suara tersebut mengenai dasar atau objek di dalam air, 
+                gelombang tersebut akan memantul kembali ke transduser. Waktu yang dibutuhkan gelombang suara untuk kembali 
+                digunakan untuk menghitung kedalaman air berdasarkan kecepatan suara di dalam air. Echosounder sering digunakan 
+                dalam survei batimetri, penangkapan ikan, serta navigasi kapal untuk memastikan keselamatan pelayaran.
+            </p>
+
+            <p>Penggunaan echosounder secara umum dimulai dengan pemasangan transduser di bagian bawah kapal atau perahu. Setelah 
+                transduser terpasang dan alat dinyalakan, echosounder akan secara kontinu mengirimkan gelombang suara ke dasar perairan. 
+                Pengguna hanya perlu mengamati layar monitor yang menampilkan kedalaman air berdasarkan waktu yang dibutuhkan gelombang suara 
+                untuk kembali. Beberapa echosounder modern dilengkapi dengan fitur-fitur tambahan seperti perekaman data kedalaman, pemetaan 
+                dasar laut, dan identifikasi jenis dasar (misalnya lumpur, pasir, atau batu). Prosedur operasional biasanya dilengkapi dengan 
+                kalibrasi awal dan penyesuaian pengaturan sesuai kondisi lingkungan untuk mendapatkan hasil yang akurat.
+            </p>
+            <a href="/blog-alat-ukur-kedalaman-echosounder.html" class="read-more-btn">Read More About Echosounder <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
+
+<div class="row3">
+
+    <div class="content-wrapper">
+        <div class="content2">
+            <span class="text-wrapper">
+                Peralatan<span></span>
+            </span>
+            <h2>SBP Syqwest Stratabox HD 3510</h2>
+            <p>SBP (Sub Bottom Profiler) Syqwest Stratabox HD 3510 adalah alat survei akustik yang digunakan untuk 
+                memetakan dan menganalisis struktur bawah permukaan dasar laut atau perairan. Alat ini menggunakan 
+                teknologi gelombang suara frekuensi tinggi untuk menembus sedimen dan lapisan dasar laut, sehingga 
+                memungkinkan pengguna untuk melihat gambaran profil lapisan bawah permukaan. Stratabox HD 3510 dirancang 
+                untuk memberikan resolusi tinggi dan detail yang baik dari struktur geologi bawah laut, yang sangat berguna 
+                untuk berbagai aplikasi seperti penelitian geologi, arkeologi laut, dan eksplorasi sumber daya alam.
+            </p>
+
+            <p>Penggunaan SBP Syqwest Stratabox HD 3510 dimulai dengan pemasangan transduser pada kapal atau perahu survei. 
+                Setelah terpasang dan alat diaktifkan, transduser akan mengirimkan gelombang suara frekuensi tinggi ke dasar 
+                laut. Gelombang suara ini akan menembus lapisan sedimen dan memantul kembali ke transduser setelah mencapai 
+                berbagai lapisan bawah permukaan. Data pantulan ini kemudian diolah oleh sistem untuk menghasilkan profil gambar 
+                bawah permukaan yang ditampilkan pada layar monitor. Pengguna dapat melihat dan menganalisis profil tersebut untuk 
+                memahami struktur geologi di bawah dasar laut. Prosedur operasional biasanya mencakup pengaturan frekuensi, kalibrasi, 
+                dan penyesuaian parameter sesuai dengan kondisi survei untuk mendapatkan hasil yang optimal.
+            </p>
+            <a href="/blog-sub_bottom_profil.html" class="read-more-btn">Read More About SBP Stratabox HD 3510 <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <div class="img-wrapper">
+        <img src="/images/design-sbp.jpg" alt="">
+    </div>
+</div>
+
+<div class="row4">
+    <div class="img-wrapper">
+        <img src="/images/design-starfish.jpg" alt="">
+    </div>
+
+    <div class="content-wrapper">
+        <div class="content2">
+            <span class="text-wrapper">
+                <span></span>Peralatan
+            </span>
+            <h2>Starfish 452F</h2>
+            <p> Starfish 452F adalah alat sonar pencitraan samping (side-scan sonar) yang digunakan untuk menghasilkan gambar detil dari dasar 
+                perairan. Alat ini dirancang untuk melakukan survei akustik dan memetakan permukaan dasar laut, danau, atau sungai dengan resolusi 
+                tinggi. Teknologi side-scan sonar memungkinkan Starfish 452F untuk memancarkan gelombang suara ke samping dari transduser yang dipasang 
+                pada kapal atau perahu, sehingga dapat mencitrakan area yang luas dengan cepat. Alat ini sangat berguna dalam aplikasi seperti survei 
+                batimetri, pencarian objek yang hilang, penelitian arkeologi bawah air, dan inspeksi infrastruktur bawah air.
+            </p>
+
+            <p>Penggunaan Starfish 452F dimulai dengan pemasangan transduser pada sisi kapal atau perahu survei, biasanya dengan menggunakan pelampung atau 
+                struktur penyangga khusus. Setelah transduser dipasang dan alat dinyalakan, gelombang suara akan dipancarkan secara horizontal ke dasar perairan. 
+                Pantulan gelombang suara dari objek dan permukaan dasar akan ditangkap kembali oleh transduser dan diolah untuk menghasilkan gambar dua dimensi dari 
+                dasar perairan. Gambar ini kemudian ditampilkan pada layar monitor, memungkinkan pengguna untuk mengidentifikasi dan menganalisis fitur-fitur di dasar perairan, 
+                seperti batu, bangkai kapal, atau struktur buatan manusia. Pengaturan parameter seperti jangkauan, resolusi, dan frekuensi harus disesuaikan sesuai dengan kondisi survei 
+                untuk mendapatkan hasil yang optimal.
+            </p>
+            <a href="/blog-side_scan_sonar.html" class="read-more-btn">Read More Starfish 452F <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
+
+<div class="row3">
+
+    <div class="content-wrapper">
+        <div class="content2">
+            <span class="text-wrapper">
+                Peralatan<span></span>
+            </span>
+            <h2>Valeport Tidemaster</h2>
+            <p>Valeport TideMaster adalah alat pengukur pasang surut (tide gauge) yang dirancang untuk memantau dan merekam perubahan 
+                ketinggian permukaan air laut atau perairan lainnya. Alat ini sangat berguna dalam studi oseanografi, manajemen pesisir, 
+                dan proyek konstruksi di dekat air. Valeport TideMaster menggunakan sensor tekanan atau akustik untuk mengukur ketinggian 
+                air dengan akurasi tinggi. Data yang dikumpulkan oleh alat ini dapat digunakan untuk analisis pasang surut, perencanaan pelabuhan, 
+                dan penelitian perubahan iklim yang berkaitan dengan kenaikan permukaan laut.
+            </p>
+
+            <p>Penggunaan Valeport TideMaster dimulai dengan pemasangan alat di lokasi yang sesuai, seperti pelampung atau struktur stasioner di dekat 
+                garis pantai. Alat ini kemudian dikonfigurasi untuk mulai mengukur ketinggian permukaan air pada interval waktu tertentu. Sensor tekanan 
+                atau akustik akan mengukur ketinggian air dan data ini disimpan dalam memori internal atau ditransmisikan secara real-time ke sistem pemantauan 
+                pusat. Pengguna dapat mengakses data melalui antarmuka yang disediakan untuk menganalisis pola pasang surut dan perubahan ketinggian air dari waktu 
+                ke waktu. Proses pengaturan biasanya mencakup kalibrasi awal dan penyesuaian parameter untuk memastikan akurasi dan konsistensi data yang dikumpulkan.
+            </p>
+            <a href="/blog-valeport_tide_master.html" class="read-more-btn">Read More About Valeport Tidemaster <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <div class="img-wrapper">
+        <img src="/images/design-valeport.jpg" alt="">
+    </div>
+</div>
+
+<div class="row4">
+    <div class="img-wrapper">
+        <img src="/images/design-cm-valeport.jpg" alt="">
+    </div>
+
+    <div class="content-wrapper">
+        <div class="content2">
+            <span class="text-wrapper">
+                <span></span>Peralatan
+            </span>
+            <h2>Current Meter Valeport</h2>
+            <p> Current Meter Valeport adalah alat yang digunakan untuk mengukur kecepatan dan arah arus air di laut, sungai, dan perairan lainnya. Alat ini sangat penting
+                 dalam studi oseanografi, manajemen perairan, dan penelitian lingkungan. Current Meter Valeport menggunakan sensor yang dirancang untuk mendeteksi gerakan air, 
+                 baik secara mekanis (dengan baling-baling atau rotor) maupun akustik (dengan teknologi Doppler). Data yang dikumpulkan oleh alat ini membantu dalam memahami 
+                 dinamika perairan, perencanaan pelabuhan, pemantauan kualitas air, dan aplikasi lainnya yang memerlukan informasi tentang arus air.
+            </p>
+
+            <p>Penggunaan Current Meter Valeport dimulai dengan pemasangan alat di lokasi yang diinginkan, yang bisa dilakukan dengan mengapungkan atau memasangnya pada struktur 
+                tetap di dalam air. Setelah terpasang, alat ini akan mulai mengukur kecepatan dan arah arus air pada interval waktu yang telah ditentukan. Data yang dikumpulkan oleh 
+                sensor akan disimpan dalam memori internal atau ditransmisikan secara real-time ke sistem pemantauan. Pengguna dapat mengakses dan menganalisis data ini melalui 
+                antarmuka perangkat lunak yang disediakan, yang memungkinkan untuk memahami pola arus dan pergerakan air di lokasi tersebut. Prosedur operasional biasanya melibatkan 
+                kalibrasi awal dan penyesuaian parameter untuk memastikan keakuratan dan konsistensi pengukuran.
+            </p>
+            <!-- <a href="#" class="read-more-btn">Read More About Current Meter Valeport <i class="fas fa-arrow-right"></i></a> -->
+        </div>
+    </div>
+</div>
+
+<div class="row3">
+
+    <div class="content-wrapper">
+        <div class="content2">
+            <span class="text-wrapper">
+                Peralatan<span></span>
+            </span>
+            <h2>Flowatch</h2>
+            <p>Flowatch adalah alat portabel yang digunakan untuk mengukur kecepatan aliran air dan udara. Alat ini sering digunakan dalam berbagai aplikasi, 
+                termasuk penelitian lingkungan, manajemen sumber daya air, dan studi meteorologi. Flowatch biasanya dilengkapi dengan baling-baling atau sensor 
+                lain yang dapat mendeteksi kecepatan aliran fluida yang melewatinya. Keunggulan alat ini adalah kemudahan penggunaan dan portabilitasnya, sehingga 
+                memungkinkan pengukuran di berbagai lokasi dengan cepat dan akurat.
+            </p>
+
+            <p>Penggunaan Flowatch sangat sederhana. Pertama, pengguna menyalakan alat dan memilih mode pengukuran yang sesuai (air atau udara). Untuk mengukur kecepatan 
+                aliran air, alat ini ditempatkan di dalam aliran air, dengan baling-baling atau sensor lainnya menghadap arah aliran. Flowatch kemudian akan mengukur dan 
+                menampilkan kecepatan aliran air secara langsung pada layar. Untuk mengukur kecepatan angin, alat ini dipegang di tempat terbuka dengan sensor menghadap 
+                arah angin. Data yang dihasilkan dapat dicatat atau disimpan dalam memori alat, tergantung pada model yang digunakan. Proses pengukuran biasanya cepat dan tidak 
+                memerlukan kalibrasi yang rumit, membuatnya ideal untuk penggunaan di lapangan.
+            </p>
+            <a href="/blog-current_meter.html" class="read-more-btn">Read More About Flowatch <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <div class="img-wrapper">
+        <img src="/images/design-flowatch.jpg" alt="">
+    </div>
+</div>
+
+<!-- //alat -->
+    <div class="cta-container">
+        <h2>Ada Yang Ingin Ditanyakan?</h2>
+        <p>Hubungi kami untuk konsultasi dan merencanakan proyek anda</p>
+        <a href="https://wa.me/+628115511125?text=Halo%2C%20saya%20%5BNama%20Anda%5D%20mendapat%20kontak%20ini%20dari%20website%20Agratek%20Surveyor%20Indonesia%2C%20saya%20ingin%20menyampaikan%20%5BTujuan%20Anda%5D"
+            class="cta-button">Chat via WhatsApp</a>
+    </div>
+
+    <div class="infosingkat-container">
+        <div class="info-content">
+            <div class="info-header">
+                <h1>Tentang CV Kami</h1>
+                <h2>Info Kontak dan Lokasi</h2>
+                <p>Pertanyaan atau informasi lebih lanjut? Jangan sungkan untuk menghubungi kami, kami selalu siap
+                    memberikan bantuan kapanpun dan dimanapun</p>
+            </div>
+            <div class="info-details">
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <strong>HP:</strong> 0811-5511-125
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>Email:</strong> Agratek.surveyorindonesia82@gmail.com
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>Alamat:</strong> Jl. Senyiur Gg. Suka Damai 2 Blok C No. 81
+                        Kelurahan Lok Bahu, Kecamatan Sungai Kunjang 
+                        Kota Samarinda, Kalimantan Timur, 75243
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6768653716483!2d117.10750691475403!3d-0.4992080996370215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df67fd5ffcabfbb%3A0xaa5fe7f157e34bf9!2sAGRATEK%20SURVEYOR%20INDONESIA!5e0!3m2!1sen!2sid!4v1624451271893!5m2!1sen!2sid"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+            <li><a
+                    href="https://www.instagram.com/cv.agrateksurveyorindonesia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><ion-icon
+                        name="logo-instagram"></ion-icon></a></li>
+            <li><a
+                    href="https://wa.me/+628115511125?text=Halo%2C%20saya%20%5BNama%20Anda%5D%20mendapat%20kontak%20ini%20dari%20website%20Agratek%20Surveyor%20Indonesia%2C%20saya%20ingin%20menyampaikan%20%5BTujuan%20Anda%5D"><ion-icon
+                        name="logo-whatsapp"></ion-icon></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+        </ul>
+
+        <ul class="menu">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="project.html">Project</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+        <p>&copy;2024 Agratek Surveyor Indonesia | All Right Reserved</p>
+    </footer>
+
+    <script src="/js/aos.js"></script>
+    <script src="/js/LYscript.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/aos.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
