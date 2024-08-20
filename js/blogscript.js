@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: "Rahasia Di Balik Data Bawah Permukaan Laut",
             date: "July 25, 2024",
             description: "Mengapa Sub Bottom Profil Penting? Temukan Jawabannya di Sini!",
-            image: "/images/design_blog-sbp.jpg",
+            image: "/images/design_blog-SBP.jpg",
             category: "Batimetri & Hidrografi",
             link: "blog-sub_bottom_profil.html"
         },
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
             title: "Rahasia Di Balik Data Bawah Permukaan Laut",
             date: "July 25, 2024",
             description: "Mengapa Sub Bottom Profil Penting? Temukan Jawabannya di Sini!",
-            image: "/images/design_blog-sbp.jpg",
+            image: "/images/design_blog-SBP.jpg",
             category: "Batimetri & Hidrografi",
             link: "blog-sub_bottom_profil.html"
         },
