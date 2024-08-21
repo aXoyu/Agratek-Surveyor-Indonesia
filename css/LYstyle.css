@@ -1115,7 +1115,7 @@ h2 {
 }
 
 /* Responsive styles for 400px viewport */
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     #header {
         padding: 15px;
     }
