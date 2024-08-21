@@ -769,6 +769,7 @@ footer .wave#wave4 {
 
     .slide-container {
         margin: 50px 20px 30px 20px;
+        padding-right: 100px;
     }
 
     .slide-container .slides img {
@@ -895,6 +896,7 @@ footer .wave#wave4 {
 
     .slide-container {
         margin: 30px 10px 20px 10px;
+        padding-right: 100px;
     }
 
     span.next,
