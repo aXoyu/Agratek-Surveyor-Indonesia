@@ -682,6 +682,7 @@ footer .wave#wave4 {
     }
 }
 
+
 @media (min-width: 801px) {
     .visimisi .col-md-6 {
         width: 50%;
@@ -901,7 +902,7 @@ footer .wave#wave4 {
     }
 
     footer .menu li a {
-        font-size: 1em;
+        font-size: 0.7em;
         margin: 0 5px;
     }
 
