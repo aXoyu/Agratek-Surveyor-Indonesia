@@ -549,7 +549,7 @@ footer .wave#wave4 {
 
 @media (max-width: 900px) {
     #header {
-        padding: 20px;
+        padding: 12px;
     }
 
     .hideOnMobile {
@@ -627,7 +627,12 @@ footer .wave#wave4 {
 
 @media (max-width: 400px) {
     #header {
-        padding: 15px;
+        padding: 7px;
+    }
+
+    #header img{
+        width: 250px;
+        height: 75px;
     }
  
     .sidebar {

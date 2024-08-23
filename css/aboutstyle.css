@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&dispal=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 #header {
     position: absolute;
     top: 0;
@@ -29,7 +43,7 @@
     color: #094b65;
     border-radius: 20px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    
+
 }
 
 #header ul li .drop-down {
@@ -54,7 +68,7 @@
     transform: rotate(180deg);
 }
 
-.dropdown-icon{
+.dropdown-icon {
     font-size: 20px;
     position: relative;
     right: -5px;
@@ -62,7 +76,7 @@
     transition: 0.1s ease-in-out all;
 }
 
-.drop-down li:hover{
+.drop-down li:hover {
     background: #094b65;
     color: #fff;
     border-radius: 0.5mm;
@@ -83,8 +97,6 @@
     transition: background-color 0.3s ease, color 0.3s ease;
     text-decoration: none;
 }
-
-
 
 #header ul li .drop-down li a:hover {
     background: #094b65;
@@ -678,7 +690,7 @@ footer .wave#wave4 {
 
 @media (max-width: 900px) {
     #header {
-        padding: 20px;
+        padding: 12px;
     }
 
     .hideOnMobile{
@@ -771,9 +783,14 @@ footer .wave#wave4 {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     #header {
-        padding: 15px;
+        padding: 7px;
+    }
+
+    #header img{
+        width: 250px;
+        height: 75px;
     }
 
     .sidebar {

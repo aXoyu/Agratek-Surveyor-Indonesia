@@ -979,7 +979,7 @@ h2 {
 /* Responsive styles for 800px viewport */
 @media (max-width: 900px) {
     #header {
-        padding: 20px;
+        padding: 12px;
     }
 
     .hideOnMobile {
@@ -1117,7 +1117,12 @@ h2 {
 /* Responsive styles for 400px viewport */
 @media (max-width: 500px) {
     #header {
-        padding: 15px;
+        padding: 7px;
+    }
+
+    #header img{
+        width: 250px;
+        height: 75px;
     }
 
     .sidebar {
@@ -1300,9 +1305,4 @@ h2 {
         font-size: 0.5em;
         margin-left: 30px;
     }
-}
-
-
-html {
-    scroll-behavior: smooth;
 }

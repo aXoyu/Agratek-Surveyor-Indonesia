@@ -1,7 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&dispal=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* width: 100%; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    background-color: #fff;
 }
 
 #header {
@@ -484,7 +502,7 @@ footer .wave#wave4 {
 /* 800px version */
 @media (max-width: 900px) {
     #header {
-        padding: 20px;
+        padding: 12px;
     }
 
     .hideOnMobile {
@@ -548,9 +566,14 @@ footer .wave#wave4 {
 /* 400px version */
 @media (max-width: 500px) {
     #header {
-        padding: 15px;
+        padding: 7px;
         justify-content: space-between;
         align-items: center;
+    }
+
+    #header img{
+        width: 250px;
+        height: 75px;
     }
 
     .sidebar {
