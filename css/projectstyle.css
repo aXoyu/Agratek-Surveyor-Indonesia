@@ -12,6 +12,10 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    min-height: 100vh;
+}
+
 #preloader{
     background: #fff url(/images/load.gif) no-repeat center;
     background-size: 20%;
@@ -894,6 +898,10 @@ footer .wave#wave4 {
 }
 
 @media (max-width: 500px) {
+    #preloader{
+        background-size: 40%;
+    }
+
     #header {
         padding: 7px;
     }
@@ -923,7 +931,7 @@ footer .wave#wave4 {
     }
 
     .slide-container {
-        margin: 50px 10px 30px 0px;
+        margin: 50px 10px 30px 10px;
         padding-right: 100px;
     }
 

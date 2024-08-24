@@ -574,6 +574,10 @@ footer .wave#wave4 {
 
 /* 400px version */
 @media (max-width: 500px) {
+    #preloader{
+        background-size: 40%;
+    }
+    
     #header {
         padding: 7px;
         justify-content: space-between;

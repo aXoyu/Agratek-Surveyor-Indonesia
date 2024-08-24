@@ -987,6 +987,10 @@ h2 {
 
 /* Responsive styles for 800px viewport */
 @media (max-width: 900px) {
+    #preloader{
+        background-size: 40%;
+    }
+    
     #header {
         padding: 12px;
     }

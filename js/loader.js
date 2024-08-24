@@ -8,7 +8,7 @@ window.addEventListener("load", function(){
             loader.style.display = "none";
             // Set 'loaded' in localStorage so that preloader doesn't show on refresh
             localStorage.setItem('loaded', 'true');
-        }, 4700); // 4700 milliseconds = 4,7 seconds
+        }, 3000); // 3000 milliseconds = 3 seconds
     } else {
         // If the page is refreshed, hide the preloader immediately
         loader.style.display = "none";

@@ -794,6 +794,10 @@ footer .wave#wave4 {
 }
 
 @media (max-width: 500px) {
+    #preloader{
+        background-size: 40%;
+    }
+
     #header {
         padding: 7px;
     }
