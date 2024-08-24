@@ -12,6 +12,15 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
+#preloader{
+    background: #fff url(/images/load.gif) no-repeat center;
+    background-size: 20%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 10000000;
+}
+
 #header {
     position: absolute;
     top: 0;
