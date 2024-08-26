@@ -1,6 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
     const blogPosts = [
         {
+            title: "Kerja Sama Nasional Hingga Internasional Agratek Surveyor Indonesia",
+            date: "August 25, 2024",
+            description: "Inovasi dan komitmen untuk menyediakan layanan yang paling akurat dan dapat diandalkan, Agratek Surveyor Indonesia siap untuk melayani lebih banyak klien di berbagai belahan dunia.",
+            image: "/images/design_blog-agratek-kerja-sama.jpg",
+            category: "All",
+            link: "blog-agratek_gointernasional.html"
+        },
+        {
             title: "Tentang Bathymetri Agratek Surveyor Indonesia",
             date: "August 7, 2024",
             description: "Survey Bathymetri Untuk Menggali Informasi dari Dalamnya Lautan",
@@ -76,6 +84,14 @@ document.addEventListener('DOMContentLoaded', function () {
     ];
 
     const recentPosts = [
+        {
+            title: "Kerja Sama Nasional Hingga Internasional Agratek Surveyor Indonesia",
+            date: "August 25, 2024",
+            description: "Inovasi dan komitmen untuk menyediakan layanan yang paling akurat dan dapat diandalkan, Agratek Surveyor Indonesia siap untuk melayani lebih banyak klien di berbagai belahan dunia.",
+            image: "/images/design_blog-agratek-kerja-sama.jpg",
+            category: "All",
+            link: "blog-agratek_gointernasional.html"
+        },
         {
             title: "Tentang Bathymetri Agratek Surveyor Indonesia",
             date: "August 7, 2024",
