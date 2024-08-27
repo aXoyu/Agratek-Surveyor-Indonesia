@@ -889,6 +889,7 @@ footer .wave#wave4 {
   
   .read-more-btn:hover {
     background-color: #0a658b;
+    color: #fff;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(10, 101, 139, 0.4);
   }
@@ -1085,6 +1086,11 @@ footer .wave#wave4 {
     
       .news-card h3 {
         font-size: 18px;
+      }
+
+      .news-card img {
+        height: 340px;
+        object-fit: cover;
       }
 }
 
@@ -1353,6 +1359,11 @@ footer .wave#wave4 {
       .news-card h3 {
         font-size: 18px;
         margin-bottom: 12px;
+      }
+
+      .news-card img {
+        height: 370px;
+        object-fit: cover;
       }
     
       .read-more-btn {
