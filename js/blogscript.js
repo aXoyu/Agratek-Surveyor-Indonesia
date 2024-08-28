@@ -1,6 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
     const blogPosts = [
         {
+            title: "Keselamatan dan Kesehatan Kerja di Agratek Surveyor Indonesia",
+            date: "August 28, 2024",
+            description: "Memastikan bahwa seluruh tim di Agratek Surveyor Indonesia bekerja dalam kondisi yang aman dan sesuai dengan standar keselamatan yang telah ditetapkan.",
+            image: "/images/design_blog-agratek-k3.jpg",
+            category: "All",
+            link: "blog-agratek_k3.html"
+        },
+        {
             title: "Kerja Sama Nasional Hingga Internasional Agratek Surveyor Indonesia",
             date: "August 25, 2024",
             description: "Inovasi dan komitmen untuk menyediakan layanan yang paling akurat dan dapat diandalkan, Agratek Surveyor Indonesia siap untuk melayani lebih banyak klien di berbagai belahan dunia.",
@@ -84,6 +92,14 @@ document.addEventListener('DOMContentLoaded', function () {
     ];
 
     const recentPosts = [
+        {
+            title: "Keselamatan dan Kesehatan Kerja di Agratek Surveyor Indonesia",
+            date: "August 28, 2024",
+            description: "Memastikan bahwa seluruh tim di Agratek Surveyor Indonesia bekerja dalam kondisi yang aman dan sesuai dengan standar keselamatan yang telah ditetapkan.",
+            image: "/images/design_blog-agratek-k3.jpg",
+            category: "All",
+            link: "blog-agratek_k3.html"
+        },
         {
             title: "Kerja Sama Nasional Hingga Internasional Agratek Surveyor Indonesia",
             date: "August 25, 2024",
