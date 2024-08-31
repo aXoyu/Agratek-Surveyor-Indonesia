@@ -966,7 +966,8 @@ footer .wave#wave4 {
 
     .slide-container {
         margin: 50px 10px 30px 90px;
-        padding-right: 1680px;
+        width: 100%;
+        padding: 0 120px;
         display: flex;
         justify-content: center;
     }
