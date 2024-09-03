@@ -988,6 +988,31 @@ footer .wave#wave4 {
     }
 }
 
+@media (min-width: 901px) {
+    #header {
+      padding: 20px 5%;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    #header .logo {
+      margin-right: 20px;
+    }
+  
+    #header ul {
+      flex-grow: 1;
+      justify-content: flex-end;
+    }
+  
+    #header ul li {
+      margin-left: 15px;
+    }
+  
+    #header ul li a {
+      padding: 10px 15px;
+    }
+  }
+
 @media (max-width: 900px) {
     #header {
         padding: 12px;
