@@ -155,12 +155,12 @@ main {
 }
 
 .slide-container {
-    margin: 50px 10px 30px 90px;
+    margin: 50px 0;
     /* margin-bottom: 30px; */
     position: relative;
     /* margin-top: 110px; */
     width: 100%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     height: 0;
     padding-bottom: 56.25%;
     border: 3px solid #094b65;
@@ -932,8 +932,8 @@ footer .wave#wave4 {
     }
 
     .slide-container {
-        margin: 60px 20px 40px 110px;
-        padding-right: 2240px;
+        /* margin: 60px 20px 40px 110px; */
+        /* padding-right: 2240px; */
         display: flex;
         justify-content: center;
     }
@@ -965,9 +965,8 @@ footer .wave#wave4 {
     }
 
     .slide-container {
-        margin: 50px 10px 30px 90px;
-        width: 100%;
-        padding: 0 120px;
+        /* margin: 50px 10px 30px 90px; */
+        /* padding-right: 1680px; */
         display: flex;
         justify-content: center;
     }

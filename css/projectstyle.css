@@ -160,10 +160,12 @@ header.title h1{
 }
 
 .slide-container {
-    margin: 50px 90px 30px 90px; /* Seimbangkan margin kiri dan kanan */
+    margin: 50px 0;
+    /* margin-bottom: 30px; */
     position: relative;
-    width: auto; /* Ubah dari 100% menjadi auto */
-    max-width: 1200px;
+    /* margin-top: 110px; */
+    width: 100%;
+    /* max-width: 1200px; */
     height: 0;
     padding-bottom: 56.25%;
     border: 3px solid #094b65;
@@ -735,8 +737,10 @@ footer .wave#wave4 {
     margin: 0 80px -50px 110px;
     }
     .slide-container {
-    margin: 60px 20px 40px 110px;
-    padding-right: 2240px;
+        /* margin: 50px 10px 30px 90px; */
+        /* padding-right: 1680px; */
+        display: flex;
+        justify-content: center;
     }
     .company-intro {
     max-width: 1400px;
@@ -763,8 +767,10 @@ footer .wave#wave4 {
     }
   
     .slide-container {
-      margin: 50px 10px 30px 90px;
-      padding-right: 1680px;
+        /* margin: 50px 10px 30px 90px; */
+        /* padding-right: 1680px; */
+        display: flex;
+        justify-content: center;
     }
   
     .company-intro {
