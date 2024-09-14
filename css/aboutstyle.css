@@ -120,7 +120,7 @@ html {
 
 header.title{
     max-width: 700px;
-    margin: 10px auto;
+    margin: 110px auto -20px;
     padding: 100px 0px 20px 0px;
     text-align: center;
     color: #094b65;
@@ -692,13 +692,223 @@ footer .wave#wave4 {
 }
 
 
-@media (min-width: 801px) {
-    .visimisi .col-md-6 {
-        width: 50%;
+@media (max-width: 1920px) {
+    #header {
+        padding: 30px 100px;
+    }
+    #header img {
+        width: 350px;
+        height: 110px;
+    }
+
+    .slide-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .company-intro {
+        max-width: 1200px;
+        padding: 20px;
+        gap: 40px;
+    }
+
+    .services-container {
+        max-width: 1200px;
+        padding: 40px 20px;
+    }
+
+    .infosingkat-container {
+        max-width: 1000px;
+        padding: 30px;
     }
 }
 
-@media (max-width: 900px) {
+@media (min-width: 1001px) and (max-width: 1328px) {
+    #header {
+        padding: 15px 2%;
+    }
+
+    #header ul {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    #header ul li {
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+
+    #header ul li a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    #header img {
+        max-width: 250px;
+        max-height: 80px;
+    }
+    
+    #header ul li .drop-down {
+        width: 250px;
+    }
+  }
+  
+  /* Existing media query for screens larger than 901px */
+  @media (min-width: 1001px) {
+    #header {
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10000;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    
+
+    #header .logo {
+      margin-right: 20px;
+    }
+  
+    #header ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      flex-wrap: nowrap; /* Prevent wrapping for consistent layout */
+    }
+  
+    #header ul li {
+      list-style: none;
+      margin-left: 20px;
+    }
+  
+    #header ul li a {
+      text-decoration: none;
+      color: #094b65;
+      font-size: 18px;
+      padding: 10px 20px;
+      border-radius: 20px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+  
+    #header ul li a:hover,
+    #header ul li a.active {
+      background: #094b65;
+      color: #fff;
+    }
+  
+    #header ul li .drop-down {
+      width: 350px;
+    }
+  
+    .menu-button {
+      display: none;
+    }
+  
+    main {
+      padding-top: 120px; /* Adjust based on your navbar height */
+    }
+  }
+  
+  /* Desktop (1329px and above) */
+@media (min-width: 1329px) {
+    #header {
+        padding: 20px 5%; /* Maintain balanced padding */
+    }
+
+    #header ul li {
+        margin-left: 25px; /* Space out menu items slightly */
+    }
+
+    #header ul li a {
+        font-size: 20px; /* Increase font size for better readability */
+        padding: 12px 20px; /* Adjust padding for a cohesive look */
+        color: #094b65; /* Consistent color for text */
+    }
+
+    #header img {
+        max-width: 320px; /* Slightly larger logo for visibility */
+        max-height: 105px;
+        transition: transform 0.3s ease; /* Add a smooth scaling effect */
+    }
+
+    #header img:hover {
+        transform: scale(1.05); /* Slightly enlarge logo on hover */
+    }
+
+    #header ul li .drop-down {
+        width: 300px; /* Keep dropdown width consistent */
+    }
+
+    #header ul li .drop-down li a {
+        padding: 10px 15px;
+        font-size: 18px; /* Increase font size in dropdown for readability */
+        color: #094b65;
+    }
+}
+
+
+  @media (max-width: 1418px) {
+
+    #header img {
+      width: 250px;
+      height: 70px;
+  }
+}
+
+  @media (max-width: 1001px) {
+    #header ul li a {
+        font-size: 10px;
+        padding: 6px 12px;
+      }
+
+      #header img {
+        width: 250px;
+        height: 90px;
+    }
+  }
+
+  /* Tablet (1245px to 1001px) */
+@media (min-width: 1001px) and (max-width: 1245px) {
+    #header {
+        padding: 15px 2%;
+        width: 100%; /* Ensure the header width is within the screen */
+        box-sizing: border-box; /* Include padding in the element's width */
+    }
+
+    #header ul {
+        flex-wrap: wrap; /* Allow items to wrap within the container */
+        justify-content: flex-end; /* Align items to the right */
+    }
+
+    #header ul li {
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+
+    #header ul li a {
+        font-size: 14px; /* Reduce font size for better fit */
+        padding: 8px 12px; /* Adjust padding for links */
+    }
+
+    #header img {
+        max-width: 250px;
+        max-height: 80px;
+    }
+    
+    /* Ensure dropdown menu doesn't overflow */
+    #header ul li .drop-down {
+        width: 250px; /* Adjust width to fit smaller screens */
+    }
+}
+
+@media (max-width: 1000px) {
     #header {
         padding: 12px;
     }
