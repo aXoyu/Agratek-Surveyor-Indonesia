@@ -1,6 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
     const blogPosts = [
         {
+            title: "Survey Pasang Surut (PASUT)",
+            date: "Sept 18, 2024",
+            description: "Fenomena alami yang terjadi akibat pengaruh gravitasi bulan dan matahari terhadap permukaan air laut.",
+            image: "/images/design_blog-pasut.jpg",
+            category: "Batimetri & Hidrografi",
+            link: "blog-pasut_agratek.html"
+        },
+        {
             title: "Keselamatan dan Kesehatan Kerja di Agratek Surveyor Indonesia",
             date: "August 28, 2024",
             description: "Memastikan bahwa seluruh tim di Agratek Surveyor Indonesia bekerja dalam kondisi yang aman dan sesuai dengan standar keselamatan yang telah ditetapkan.",
@@ -92,6 +100,14 @@ document.addEventListener('DOMContentLoaded', function () {
     ];
 
     const recentPosts = [
+        {
+            title: "Survey Pasang Surut (PASUT)",
+            date: "Sept 18, 2024",
+            description: " fenomena alami yang terjadi akibat pengaruh gravitasi bulan dan matahari terhadap permukaan air laut.",
+            image: "/images/design_blog-pasut.jpg",
+            category: "Batimetri & Hidrografi",
+            link: "blog-pasut_agratek.html"
+        },
         {
             title: "Keselamatan dan Kesehatan Kerja di Agratek Surveyor Indonesia",
             date: "August 28, 2024",
